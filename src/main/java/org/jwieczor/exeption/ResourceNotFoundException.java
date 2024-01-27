@@ -1,2 +1,7 @@
-package org.jwieczor.exeption;public class ResourceNotFoundException {
+package org.jwieczor.exeption;
+
+public class ResourceNotFoundException extends RuntimeException {
+    public ResourceNotFoundException(String message) {
+        super(message);
+    }
 }

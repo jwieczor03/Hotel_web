@@ -1,18 +1,16 @@
 package org.jwieczor.controller;
 
 
-import com.dailycodework.lakesidehotel.exception.InvalidBookingRequestException;
-import com.dailycodework.lakesidehotel.exception.ResourceNotFoundException;
-import com.dailycodework.lakesidehotel.model.BookedRoom;
-import com.dailycodework.lakesidehotel.model.Room;
-import com.dailycodework.lakesidehotel.response.BookingResponse;
-import com.dailycodework.lakesidehotel.response.RoomResponse;
-import com.dailycodework.lakesidehotel.service.IBookingService;
-import com.dailycodework.lakesidehotel.service.IRoomService;
+import org.jwieczor.exeption.InvalidBookingRequestException;
+import org.jwieczor.exeption.ResourceNotFoundException;
+import org.jwieczor.model.BookedRoom;
+import org.jwieczor.model.Room;
+import org.jwieczor.response.BookingResponse;
+import org.jwieczor.service.BookingService;
+import org.jwieczor.service.RoomService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,8 +25,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/bookings")
 public class BookingController {
-    private final IBookingService bookingService;
-    private final IRoomService roomService;
+    private final BookingService bookingService;
+    private final RoomService roomService;
 
     @GetMapping("/all-bookings")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
@@ -84,7 +82,7 @@ public class BookingController {
 
     private BookingResponse getBookingResponse(BookedRoom booking) {
         Room theRoom = roomService.getRoomById(booking.getRoom().getId()).get();
-        RoomResponse room = new RoomResponse(
+        BookingResponse room = new BookingResponse(
                 theRoom.getId(),
                 theRoom.getRoomType(),
                 theRoom.getRoomPrice());

@@ -1,34 +1,38 @@
 package org.jwieczor.response;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.tomcat.util.codec.binary.Base64;
 
-import java.math.BigDecimal;
-import java.util.List;
+import java.time.LocalDate;
 
-public class RoomResponse {
+public class BookingResponse {
     private Long id;
-    private String roomType;
-    private BigDecimal roomPrice;
-    private boolean isBooked;
-    private String photo;
-    private List<BookingResponse>bookings;
 
-    public RoomResponse(Long id, String roomType, BigDecimal roomPrice) {
+    private LocalDate checkInDate;
+
+    private LocalDate checkOutDate;
+
+    private String guestName;
+
+    private String guestEmail;
+
+    private int numOfAdults;
+
+    private int numOfChildren;
+
+    private int totalNumOfGuests;
+
+    private String bookingConfirmationCode;
+
+    private RoomResponse room;
+
+    public BookingResponse(Long id, LocalDate checkInDate, LocalDate checkOutDate,
+                           String bookingConfirmationCode) {
         this.id = id;
-        this.roomType = roomType;
-        this.roomPrice = roomPrice;
+        this.checkInDate = checkInDate;
+        this.checkOutDate = checkOutDate;
+        this.bookingConfirmationCode = bookingConfirmationCode;
     }
-
-    public RoomResponse(Long id, String roomType, BigDecimal roomPrice, boolean isBooked,
-                        byte[] photoBytes , List<BookingResponse> bookings) {
-        this.id = id;
-        this.roomType = roomType;
-        this.roomPrice = roomPrice;
-        this.isBooked = isBooked;
-        this.photo = photoBytes != null ? Base64.encodeBase64String(photoBytes) : null;
-        this.bookings = bookings;
-    }
-
+    
 }
