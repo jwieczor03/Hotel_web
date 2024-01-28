@@ -5,47 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98f71bf8-ccbe-4229-af39-7f781bd34f72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/jwt/AuthTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/jwt/JwtAuthEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/jwt/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/user/HotelUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/user/HotelUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/controller/BookingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/InternalServerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/InternalServerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/InvalidBookingRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/InvalidBookingRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/PhotoRetrievalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/PhotoRetrievalException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/RoleAlreadyExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/RoleAlreadyExistException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/UserAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/exeption/UserAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/model/BookedRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/model/BookedRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/model/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/repository/RoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/repository/RoomRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/response/BookingResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/response/BookingResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/response/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/response/JwtResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/response/RoomResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/response/RoomResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/RoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/user/HotelUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/security/user/HotelUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jwieczor/service/RoomServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +71,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Hotel_web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.jwieczor.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -115,11 +88,22 @@
       <option name="presentableId" value="Default" />
       <updated>1706372810193</updated>
       <workItem from="1706372811222" duration="1534000" />
-      <workItem from="1706377065170" duration="8064000" />
+      <workItem from="1706377065170" duration="15354000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

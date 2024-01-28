@@ -1,6 +1,6 @@
 package org.jwieczor.security.user;
 
-import com.dailycodework.lakesidehotel.model.User;
+import org.jwieczor.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

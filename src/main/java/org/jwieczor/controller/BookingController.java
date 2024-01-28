@@ -6,6 +6,7 @@ import org.jwieczor.exeption.ResourceNotFoundException;
 import org.jwieczor.model.BookedRoom;
 import org.jwieczor.model.Room;
 import org.jwieczor.response.BookingResponse;
+import org.jwieczor.response.RoomResponse;
 import org.jwieczor.service.BookingService;
 import org.jwieczor.service.RoomService;
 import lombok.RequiredArgsConstructor;
@@ -82,7 +83,7 @@ public class BookingController {
 
     private BookingResponse getBookingResponse(BookedRoom booking) {
         Room theRoom = roomService.getRoomById(booking.getRoom().getId()).get();
-        BookingResponse room = new BookingResponse(
+        RoomResponse room = new RoomResponse(
                 theRoom.getId(),
                 theRoom.getRoomType(),
                 theRoom.getRoomPrice());
